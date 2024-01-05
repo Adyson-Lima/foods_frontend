@@ -22,6 +22,16 @@ export default function Foods(){
     }
   }
 
+  // DELETE, remove dados na api
+  async function deleteFood(id){
+    try {
+      await api.delete(`api/v1/foods/${id}`,{});
+      setFoods(my_foods.filter(food => food.id !== id));
+    } catch (error) {
+      alert("Erro ao excluir!");      
+    }
+  }
+
   return(
 
     <div data-testid="mycard" className="card border-primary" style={{marginTop: '20px'}} >
@@ -56,7 +66,7 @@ export default function Foods(){
 
                   <button data-testid="mybtn2" type="button"
                   className="btn btn-outline-danger" style={{margin: '2px'}}
-                  >Excluir</button>
+                  onClick={() => deleteFood(food.id)}>Excluir</button>
 
                 </td>
             </tr>
