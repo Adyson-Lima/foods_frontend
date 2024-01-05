@@ -32,6 +32,10 @@ describe('Testes da tela NewUpdate', () => {
     expect(screen.getByTestId('input2')).toBeInTheDocument();
   });
 
+  it('Existe botão enviar em NewUpdate?', () => {
+    expect(screen.getByTestId('btnenviar')).toBeInTheDocument();
+  });
+
 
 
 });
