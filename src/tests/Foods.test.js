@@ -5,9 +5,11 @@ import { BrowserRouter } from 'react-router-dom';
 describe('Testes da tela Foods', () => {
 
   beforeEach(() => {
-    <BrowserRouter>
+    render(
+      <BrowserRouter>
       <Foods/>
     </BrowserRouter>
+    );    
   });
 
   it('Exist card em Foods?', () => {
