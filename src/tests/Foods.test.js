@@ -16,4 +16,8 @@ describe('Testes da tela Foods', () => {
     expect(screen.getByTestId('mycard')).toBeInTheDocument();
   });
 
+  it('Existe link Novo em Foods?', () => {
+    expect(screen.getByTestId('mylink')).toBeInTheDocument();
+  });
+
 });
