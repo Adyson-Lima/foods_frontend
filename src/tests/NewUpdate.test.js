@@ -36,6 +36,4 @@ describe('Testes da tela NewUpdate', () => {
     expect(screen.getByTestId('btnenviar')).toBeInTheDocument();
   });
 
-
-
 });
