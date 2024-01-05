@@ -12,8 +12,12 @@ describe('Testes da tela NewUpdate', () => {
     );
   });
 
-  it('Existe card em NewUpdate', () => {
+  it('Existe card em NewUpdate?', () => {
     expect(screen.getByTestId('mycard')).toBeInTheDocument();
+  });
+
+  it('Existe link Home em NewUpdate?', () => {
+    expect(screen.getByTestId('mylink')).toBeInTheDocument();
   });
 
 });
