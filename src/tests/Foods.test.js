@@ -7,8 +7,8 @@ describe('Testes da tela Foods', () => {
   beforeEach(() => {
     render(
       <BrowserRouter>
-      <Foods/>
-    </BrowserRouter>
+        <Foods/>
+      </BrowserRouter>
     );    
   });
 
